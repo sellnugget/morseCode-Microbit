@@ -2,10 +2,10 @@
 
 
 enum Signal{
+        //% block="•"
         Dot,
+        //% block="—"
         Dash,
-        End_Letter,
-        Space
 }
 
 
@@ -13,30 +13,29 @@ namespace MorseCode {
 
 
 
-    /**
-     * Say hello on the microbit screen
-     */
-    //% block="say hello"
-    export function send(signal: Signal): void {
-        if(signal == Signal.Dot){
-            basic.showString(".")
-        }
-        else if(signal == Signal.Dash){
-            basic.showString("-")
-        }
-        else if(signal == Signal.End_Letter){
-            basic.showString(" ")
-        }
-        else if(signal == Signal.Space){
-            basic.showString("word")
-        }
-    }
+    //% block="Letter $a"
+    export function PlayLetter1(a: Signal)
+    {
 
-    /**
-     * Add two numbers
-     */
-    //% block="add $a and $b"
-    export function add(a: number, b: number): number {
-        return a + b
+    }
+    //% block="Letter $a $b"
+    export function PlayLetter2(a: Signal, b: Signal)
+    {
+
+    }
+     //% block="Letter $a $b $c"
+    export function PlayLetter3(a: Signal, b: Signal, c: Signal)
+    {
+
+    }
+     //% block="Letter $a $b $c $d"
+    export function PlayLetter4(a: Signal, b: Signal, c: Signal, d: Signal)
+    {
+
+    }
+     //% block="Letter $a $b $c $d $e"
+    export function PlayLetter5(a: Signal, b: Signal, c: Signal, d: Signal, e: Signal )
+    {
+
     }
 }
