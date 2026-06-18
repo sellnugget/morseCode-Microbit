@@ -12,9 +12,24 @@ enum Signal{
 namespace MorseCode {
 
 
-     //% block="Letter $a $b $c $d $e"
-    export function PlayLetter5(a: Signal, b: Signal, c: Signal, d: Signal, e: Signal )
+    //% block="—"
+    export function Dash()
     {
 
+    }
+    //% block="•"
+    export function Dot()
+    {
+        
+    }
+    //% block="End Letter"
+    export function EndLetter()
+    {
+        
+    }
+    //% block="End Word"
+    export function EndWord()
+    {
+        
     }
 }
