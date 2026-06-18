@@ -15,21 +15,24 @@ namespace MorseCode {
     //% block="—"
     export function Dash()
     {
-
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Half))
     }
     //% block="•"
     export function Dot()
     {
-        
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Whole))
     }
     //% block="End Letter"
     export function EndLetter()
     {
-        
+        music.rest(music.beat(BeatFraction.Whole))
     }
     //% block="End Word"
     export function EndWord()
     {
-        
+        music.rest(music.beat(BeatFraction.Double))
     }
 }
