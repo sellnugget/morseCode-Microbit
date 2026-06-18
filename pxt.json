@@ -1,0 +1,12 @@
+{
+  "name": "Morse-Code",
+  "version": "0.0.1",
+  "description": "Plays Morse Code from speakers",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts"
+  ],
+  "public": true
+}
