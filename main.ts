@@ -12,11 +12,9 @@ enum Signal{
 namespace MorseCode {
 
 
-    //% block="send morse $signals"
-    //% signals.shadow="lists_create_with"
-    export function sendMorse(signals: Signal[]) {
-        for (let s of signals) {
+     //% block="Letter $a $b $c $d $e"
+    export function PlayLetter5(a: Signal, b: Signal, c: Signal, d: Signal, e: Signal )
+    {
 
-        }
     }
 }
