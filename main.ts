@@ -1,11 +1,35 @@
 //% color="#AA278D" icon="\uf1b3"
+
+
+enum Signal{
+        Dot,
+        Dash,
+        End_Letter,
+        Space
+}
+
+
 namespace MorseCode {
+
+
+
     /**
      * Say hello on the microbit screen
      */
     //% block="say hello"
-    export function sayHello(): void {
-        basic.showString("Hello!")
+    export function send(signal: Signal): void {
+        if(signal == Signal.Dot){
+            basic.showString(".")
+        }
+        else if(signal == Signal.Dash){
+            basic.showString("-")
+        }
+        else if(signal == Signal.End_Letter){
+            basic.showString(" ")
+        }
+        else if(signal == Signal.Space){
+            basic.showString("word")
+        }
     }
 
     /**
