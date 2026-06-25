@@ -24,7 +24,7 @@ namespace MorseCode {
     `)
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
         music.rest(music.beat(BeatFraction.Half))
-
+        basic.clearScreen()
     }
     //% block="•"
     export function Dot()
@@ -39,6 +39,7 @@ namespace MorseCode {
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
         music.rest(music.beat(BeatFraction.Quarter))
         music.rest(music.beat(BeatFraction.Whole))
+        basic.clearScreen()
     }
     //% block="End Letter"
     export function EndLetter()
@@ -58,5 +59,6 @@ namespace MorseCode {
     . . . . .
     `)
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
+        basic.clearScreen()
     }
 }
