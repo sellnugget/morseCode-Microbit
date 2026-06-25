@@ -28,11 +28,13 @@ namespace MorseCode {
     //% block="End Letter"
     export function EndLetter()
     {
-        music.rest(music.beat(BeatFraction.Whole))
+        while(!input.buttonIsPressed(Button.A)){
+
+        }
     }
-    //% block="End Word"
-    export function EndWord()
+    //% block="Space"
+    export function Space()
     {
-        music.rest(music.beat(BeatFraction.Double))
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
     }
 }
