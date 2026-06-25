@@ -15,12 +15,26 @@ namespace MorseCode {
     //% block="—"
     export function Dash()
     {
+        basic.showLeds(`
+    . . . . .
+    . . . . .
+    . # # # .
+    . . . . .
+    . . . . .
+    `);
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
         music.rest(music.beat(BeatFraction.Half))
     }
     //% block="•"
     export function Dot()
     {
+        basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # # # .
+    . # # # .
+    . . . . .
+    `);
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
         music.rest(music.beat(BeatFraction.Quarter))
         music.rest(music.beat(BeatFraction.Whole))
@@ -29,12 +43,19 @@ namespace MorseCode {
     export function EndLetter()
     {
         while(!input.buttonIsPressed(Button.A)){
-
+            if(Button)
         }
     }
     //% block="Space"
     export function Space()
     {
+        basic.showLeds(`
+    . . . . .
+    . . . . .
+    # # # # #
+    # # # # #
+    . . . . .
+    `);
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
     }
 }
